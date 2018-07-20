@@ -76,7 +76,7 @@
           |   width: number
           |   height: number
           |   thresholds: { xs: 600, sm: 960, md: 1280, lg: 1920 }
-          |   scrollbarOffset: 16
+          |   scrollbarWidth: 16
           | }
           li <code>xs</code>, <code>xsOnly</code>, <code>xsAndUp</code>
           li <code>sm</code>, <code>smOnly</code>, <code>smAndDown</code>, <code>smAndUp</code>

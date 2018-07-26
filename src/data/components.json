@@ -334,6 +334,16 @@
     ],
     "spec": false
   },
+  "images": {
+    "components": ["v-img"],
+    "examples": [
+      "usage",
+      "containCover",
+      "maxHeight",
+      "ratio"
+    ],
+    "spec": false
+  },
   "inputs": {
     "components": ["v-input"],
     "examples": ["usage"],
@@ -599,7 +609,8 @@
     "components": ["v-textarea"],
     "examples": [
       "multiLine",
-      "autoGrow"
+      "autoGrow",
+      { "file": "signupBox", "newIn": "1.1" }
     ],
     "spec": false
   },

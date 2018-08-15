@@ -183,11 +183,12 @@
             v-list-tile-avatar
               v-icon(light) mdi-package
             v-list-tile-content
-              v-list-tile-title 1.10
+              v-list-tile-title 1.0
           v-list-tile(
             v-for="release in releases"
             :key="release"
-            @click="changeToRelease(release)"
+            :href="`/releases/${release}`"
+            @click.prevent="changeToRelease(release)"
           )
             v-list-tile-avatar
               v-icon(light) mdi-package

@@ -131,6 +131,12 @@
     "description": "Breakpoints for Vuetify Framework",
     "keywords": "breakpoints"
   },
+  "layout/aspect-ratios": {
+    "h1": "Aspect ratios",
+    "title": "Aspect ratios",
+    "description": "Aspect ratios for Vuetify Framework",
+    "keywords": "ratio, responsive"
+  },
   "layout/spacing": {
     "h1": "Spacing",
     "title": "Spacing helpers",
@@ -364,6 +370,12 @@
     "title": "Progress",
     "description": "Progress components for the Vuetify framework.",
     "keywords": "progress"
+  },
+  "components/ratings": {
+    "h1": "Ratings",
+    "title": "Ratings",
+    "description": "Star rating component for the Vuetify framework.",
+    "keywords": "rating, star rating, ratings, stars"
   },
   "components/sliders": {
     "h1": "Sliders",

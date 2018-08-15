@@ -10,6 +10,14 @@
     ],
     "spec": false
   },
+  "aspect-ratios": {
+    "components": [
+      "v-responsive"
+    ],
+    "examples": [
+      { "file": "ratios", "newIn": "1.2" }
+    ]
+  },
   "autocompletes": {
     "components": [
       "v-autocomplete"
@@ -190,6 +198,7 @@
       "dateDialogAndMenu",
       "dateFormatting",
       "dateAllowedDates",
+      { "file": "dateMultiple", "newIn": "1.2" },
       "dateWidth",
       "dateBirthday",
       "datePickerDate",
@@ -202,6 +211,7 @@
       "monthColorable",
       "monthDialogAndMenu",
       "monthAllowedMonths",
+      { "file": "monthMultiple", "newIn": "1.2" },
       "monthWidth",
       "monthInternationalization",
       "monthIcons",
@@ -459,6 +469,18 @@
     ],
     "spec": false
   },
+  "ratings": {
+    "components": ["v-rating"],
+    "examples": [
+      { "file": "default", "newIn": "1.2" },
+      { "file": "sizes", "newIn": "1.2" },
+      { "file": "length", "newIn": "1.2" },
+      { "file": "increments", "newIn": "1.2" },
+      { "file": "slots", "newIn": "1.2" },
+      { "file": "card", "newIn": "1.2" },
+      { "file": "advanced", "newIn": "1.2" }
+    ]
+  },
   "resizing": {
     "components": ["v-resize"],
     "examples": [
@@ -518,7 +540,9 @@
       "light",
       "icons",
       "multiple",
-      "customTextAndValue"
+      "customTextAndValue",
+      { "file": "slots", "newIn": "1.2" },
+      "selectionAppearance"
     ],
     "spec": false
   },

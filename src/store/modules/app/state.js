@@ -223,6 +223,10 @@ export default () => ({
         {
           text: 'Layout.Breakpoints.breakpointHeader',
           href: 'breakpoint-object'
+        },
+        {
+          text: 'Layout.Breakpoints.customizeThresholdsHeader',
+          href: 'customize-breakpoint-thresholds'
         }
       ],
       Alignment: [

@@ -85,4 +85,16 @@
           li <code>xl</code>, <code>xlOnly</code>, <code>xlAndDown</code>
           li <code>name</code> (can be one of <code>'xs'</code>, <code>'sm'</code>, <code>'md'</code>, <code>'lg'</code>, <code>'xl'</code>)
           li <code>width</code>, <code>height</code>
+
+      section#customize-breakpoint-thresholds
+        helpers-section-head(value="Layout.Breakpoints.customizeThresholdsHeader")
+        helpers-section-text(value="Layout.Breakpoints.customizeThresholdsText1")
+        helpers-markup(lang="js")
+          | Vue.use(Vuetify, {
+          |   breakpoint: {
+          |     thresholds: {
+          |       xs: 360
+          |     }
+          |   }
+          | })
 </template>

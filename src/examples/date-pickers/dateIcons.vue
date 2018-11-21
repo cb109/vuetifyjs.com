@@ -15,8 +15,14 @@
   export default {
     data () {
       return {
-        picker: null
+        picker: new Date().toISOString().substr(0, 10)
       }
     }
   }
 </script>
+
+<codepen-resources lang="json">
+  {
+    "css": ["https://cdn.materialdesignicons.com/2.5.94/css/materialdesignicons.min.css"]
+  }
+</codepen-resources>

@@ -75,39 +75,43 @@
     ],
     "examples": [
       "textDividers",
-      "iconDividers"
+      "iconDividers",
+      "itemSlot"
     ],
     "spec": false
   },
   "buttons": {
-    "components": ["v-btn", "v-btn-toggle"],
+    "components": ["v-btn"],
     "examples": [
       "usage",
       "flat",
       "raised",
       "depressed",
       "dropdown",
-      "toggle",
       "icon",
       "floating",
       "loaders",
       "sizing",
       "outline",
       "round",
-      "block",
-      {
-        "file": "appBar" ,
-        "newIn": "1.1"
-      }
+      "block"
     ],
     "spec": false
+  },
+  "button-groups": {
+    "components": ["v-btn-toggle"],
+    "examples": [
+      "toggle",
+      "appBar"
+    ]
   },
   "cards": {
     "components": [
       "v-card",
+      "v-card-actions",
       "v-card-media",
-      "v-card-title",
-      "v-card-actions"
+      "v-card-text",
+      "v-card-title"
     ],
     "examples": [
       "components",
@@ -197,6 +201,7 @@
       "dateColorable",
       "dateDialogAndMenu",
       "dateFormatting",
+      "dateFormattingMomentDatefns",
       "dateAllowedDates",
       { "file": "dateMultiple", "newIn": "1.2" },
       "dateWidth",
@@ -329,6 +334,14 @@
     ],
     "spec": false
   },
+  "hover": {
+    "components": ["v-hover"],
+    "examples": [
+      { "file": "default", "newIn": "1.2" },
+      { "file": "transition", "newIn": "1.2" }
+    ],
+    "spec": false
+  },
   "icons": {
     "components": ["v-icon"],
     "examples": [
@@ -350,7 +363,8 @@
       "usage",
       "containCover",
       "maxHeight",
-      "ratio"
+      "ratio",
+      "gradients"
     ],
     "spec": false
   },
@@ -358,6 +372,14 @@
     "components": ["v-input"],
     "examples": ["usage"],
     "spec": false
+  },
+  "item-groups": {
+    "components": ["v-item-group", "v-item"],
+    "newIn": "1.3",
+    "examples": [
+      "usage",
+      "post"
+    ]
   },
   "jumbotrons": {
     "components": ["v-jumbotron"],
@@ -529,7 +551,8 @@
       "switchesBoolean",
       "switchesArray",
       "switchesStates",
-      "switchesColors"
+      "switchesColors",
+      "labelSlot"
     ],
     "spec": false
   },
@@ -559,7 +582,8 @@
       "customColors",
       "validation",
       { "file": "range", "newIn": "1.1" },
-      "minMax"
+      "minMax",
+      "metronome"
     ],
     "spec": false
   },
@@ -647,6 +671,8 @@
       "icon",
       "clearable",
       "iconEvents",
+      "iconSlots",
+      "labelSlot",
       "characterCounter",
       "password",
       "validation",
@@ -660,6 +686,19 @@
       "customColors",
       "masks",
       "progressBar"
+    ],
+    "spec": false
+  },
+  "timelines": {
+    "components": ["v-timeline", "v-timeline-item"],
+    "examples": [
+      "usage",
+      "small",
+      "icons",
+      "color",
+      "slot",
+      "alert",
+      "advanced"
     ],
     "spec": false
   },
@@ -678,6 +717,9 @@
   "toolbars": {
     "components": [
       "v-toolbar",
+      "v-toolbar-items",
+      "v-toolbar-side-icon",
+      "v-toolbar-title",
       "v-system-bar"
     ],
     "examples": [
@@ -709,5 +751,44 @@
   "touch-support": {
     "components": ["v-touch"],
     "examples": ["default"]
+  },
+  "transitions": {
+    "components": [
+      "v-fade-transition",
+      "v-scroll-x-transition",
+      "v-scroll-x-reverse-transition",
+      "v-scroll-y-transition",
+      "v-scroll-y-reverse-transition",
+      "v-slide-x-transition",
+      "v-slide-x-reverse-transition",
+      "v-slide-y-transition",
+      "v-slide-y-reverse-transition",
+      "v-scale-transition"
+    ],
+    "examples": [
+      "slideXTransitions",
+      "slideYTransitions",
+      "scaleTransition",
+      "fadeTransition",
+      "customOrigin",
+      { "file": "todo", "newIn": "1.2" }
+    ]
+  },
+  "treeview": {
+    "components": ["v-treeview"],
+    "examples": [
+      "usage",
+      "fileExplorer",
+      "directory",
+      "hotspots"
+    ]
+  },
+  "windows": {
+    "components": ["v-window", "v-window-item"],
+    "examples": [
+      "usage",
+      "onboarding",
+      "account"
+    ]
   }
 }

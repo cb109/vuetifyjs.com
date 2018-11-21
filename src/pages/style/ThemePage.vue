@@ -54,6 +54,49 @@
         helpers-markup(lang="javascript")
           | this.$vuetify.theme.primary = '#4caf50'
 
+        helpers-section-subheader(:value="`${namespace}.variantsSubheader`")
+        helpers-section-text(:value="`${namespace}.variantsText1`")
+        helpers-markup(lang="javascript")
+          | // src/theme.js
+          | import colors from 'vuetify/es5/util/colors'
+          |
+          | export default {
+          |   primary: {
+          |     base: colors.purple.base,
+          |     darken1: colors.purple.darken2
+          |   },
+          |   secondary: colors.indigo,
+          |   // All keys will generate theme styles,
+          |   // Here we add a custom `tertiary` color
+          |   tertiary: colors.pink.base
+          | }
+
+        helpers-section-text(:value="`${namespace}.variantsText2`")
+        helpers-markup(lang="javascript")
+          | // src/index.js
+          | import Vue from 'vue'
+          | import Vuetify from 'vuetify'
+          | import theme from './theme'
+          |
+          | Vue.use(Vuetify, { theme })
+
+        helpers-section-text(:value="`${namespace}.variantsText3`")
+        helpers-markup(lang="typescript")
+          | interface ParsedThemeItem {
+          |   base: string
+          |   lighten5: string
+          |   lighten4: string
+          |   lighten3: string
+          |   lighten2: string
+          |   lighten1: string
+          |   darken1: string
+          |   darken2: string
+          |   darken3: string
+          |   darken4: string
+          |
+          |   [name: string]: string
+          | }
+
       section#options
         helpers-section-head(:value="`${namespace}.optionHeader`")
         helpers-section-text(:value="`${namespace}.optionText1`")
@@ -80,6 +123,31 @@
           | Vue.use(Vuetify, {
           |   options: {
           |     themeCache
+          |   }
+          | })
+        h3.mb-3 {{ $t(`${namespace}.optionHeader4`) }}
+        helpers-section-text(:value="`${namespace}.optionText5`")
+        helpers-markup(lang="javascript")
+          | Vue.use(Vuetify, {
+          |   options: {
+          |     customProperties: true
+          |   }
+          | })
+        helpers-markup(lang="html")
+          | #{'<style scoped>'}
+          |   .something {
+          |     color: var(--v-primary-base)
+          |     background-color: var(--v-accent-lighten2)
+          |   }
+          | #{'</style>'}
+        h3.mb-3 {{ $t(`${namespace}.optionHeader5`) }}
+        helpers-section-text(:value="`${namespace}.optionText6`")
+        helpers-markup()
+          | Content-Security-Policy: script-src 'self' 'nonce-dQw4w9WgXcQ'
+        helpers-markup(lang="javascript")
+          | Vue.use(Vuetify, {
+          |   options: {
+          |     cspNonce: 'dQw4w9WgXcQ'
           |   }
           | })
 
@@ -114,10 +182,13 @@
         h3.mb-3 {{ $t(`${namespace}.stylusHeader3`) }}
         helpers-section-text(:value="`${namespace}.stylusText7`")
         helpers-markup(lang="stylus")
+          | @import '~vuetify/src/stylus/settings/_variables'
+          | &nbsp;
+          | $material-light.background = #FFF
           | $body-font-family = 'Open Sans'
           | $alert-font-size = 18px
           | &nbsp;
           | @import '~vuetify/src/stylus/main'
-          | // For a-la-carte
+          | // Or for a-la-carte:
           | @import '~vuetify/src/stylus/app'
 </template>

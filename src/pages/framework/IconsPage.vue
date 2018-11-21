@@ -40,7 +40,9 @@
         | import Vue from 'vue'
         | import Vuetify from 'vuetify'
         |
-        | Vue.use(Vuetify)
+        | Vue.use(Vuetify, {
+        |  iconfont: 'mdi'
+        | })
 
       // MDI
       helpers-section-subheader(value="Framework.Icons.installMDI")
@@ -177,7 +179,7 @@
         |   icons: {
         |     'product': 'mdi-dropbox',
         |     'support': 'mdi-lifebuoy',
-        |     'steam': 'mdi-steambox',
+        |     'steam': 'mdi-steam-box',
         |     'pc': 'mdi-desktop-classic',
         |     'xbox': 'mdi-xbox',
         |     'playstation': 'mdi-playstation',
@@ -195,7 +197,7 @@
         |
         |   &lt;v-icon v-html="'$vuetify.icons.steam'"&gt;&lt;/v-icon&gt;
         |
-        |   &lt;v-icon v-text="system"&gt;&lt;/v-icon&gt;
+        |   &lt;v-icon v-text="platform"&gt;&lt;/v-icon&gt;
         | &lt;/template&gt;
         |
         | &lt;script&gt;
@@ -209,7 +211,7 @@
         |
         |     computed: {
         |       platform () {
-        |         return '$vuetify.icons.' + user.platform
+        |         return '$vuetify.icons.' + this.user.platform
         |       }
         |     }
         |   }
